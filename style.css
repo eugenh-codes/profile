@@ -6,6 +6,7 @@
   --teal: #127681;
   --navy: #10375C;
   --tarnsparent-navy: rgba(16, 55, 92, 0.5);
+  --dark: #0d1117;
 }
 
 body {
@@ -14,7 +15,7 @@ font-style: normal;
 font-size: 17px;
 line-height: 1.6;
 font-weight: 500px;
-background-color: var(--gray);
+background-color: var(--dark);
 color: black;
 padding: 0 25px;
 }
@@ -72,6 +73,32 @@ h1, h2 {
 p {
   font-size: 17px;
   margin-bottom: 30px;
+}
+
+.li-black {
+  border: 1px solid var(--tarnsparent-navy);
+  margin: 5px;
+  border-radius: 3px;
+  color: white;
+}
+
+code {
+  background-color: var(white);
+  color: var(--tarnsparent-navy);
+}
+
+.li-black:hover {
+  background-color: var(--yellow);
+  border: none;
+  cursor: none;
+}
+
+.li-black i:hover {
+  color: black;
+}
+
+.li-black > code {
+  color: black;
 }
 
 .list-inline {
