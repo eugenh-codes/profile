@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap");
+
+:root {
+  --gray: #F4F6FF;
+  --yellow: #F3C623;
+  --teal: #127681;
+  --navy: #10375C;
+  --tarnsparent-navy: rgba(16, 55, 92, 0.5);
+}
+
+body {
+font-family: "M PLUS Rounded 1c", sans-serif;
+font-style: normal;
+font-size: 17px;
+line-height: 1.6;
+font-weight: 500px;
+background-color: var(--gray);
+color: black;
+padding: 0 25px;
+}
+
+::selection {
+  background-color: var(--yellow);
+  color: black;
+}
+
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+.card-white {
+  background-color: white;
+  margin: 20px 0;
+  padding: 40px;
+  border: 1px solid #EAEAEA;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1, h2 {
+  font-style: normal;
+  color: var(--teal);
+}
+
+.img-circle {
+  width: 200px;
+  border-radius: 50%;
+  filter: drop-shadow(3px 3px 4px  var(--tarnsparent-navy));
+}
+
+.img-circle:hover {
+  filter: drop-shadow(3px 3px 4px  var(--yellow));
+}
+
+.btn-navy {
+  background-color: var(--navy);
+  color: white;
+  font-size: 19px;
+  line-height: 2;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.btn-navy:hover {
+  background-color: var(--yellow);
+  color: black;
+  font-weight: 700;
+}
+
+p {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.list-inline i {
+  color: var(--tarnsparent-navy);
+}
+
+a {
+  text-decoration: none;
+  color: var(--navy);
+  font-size: 18px;
+  transition: 0.3 easy;
+}
+
+i:hover {
+  color: var(--yellow);
+  animation: none;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+  .btn-navy {
+    font-size: 15px;
+  }
+  .btn-navy:hover {
+    font-weight: 500;
+  }
+}
